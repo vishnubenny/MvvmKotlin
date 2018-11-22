@@ -46,5 +46,5 @@ dependencies {
     annotationProcessor "android.arch.lifecycle:compiler:$rootProject.lifecycle"
 
     //dataBinding library
-    kapt "androidx.databinding:databinding-compiler:$rootProject.dataBindingVersion"
+//    kapt "androidx.databinding:databinding-compiler:$rootProject.dataBindingVersion"
 }
