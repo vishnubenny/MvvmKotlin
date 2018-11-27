@@ -7,7 +7,7 @@ import android.os.Bundle
 abstract class MvvmActivity<T : ViewDataBinding, V : BaseViewModel<N>, N: BaseNavigator> : BaseActivity() {
 
     private var mViewDataBinding: T? = null
-    private var mViewModel: V? = null
+    var mViewModel: V? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
