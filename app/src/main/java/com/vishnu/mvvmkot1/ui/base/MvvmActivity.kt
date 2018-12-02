@@ -4,10 +4,10 @@ import android.databinding.DataBindingUtil
 import android.databinding.ViewDataBinding
 import android.os.Bundle
 
-abstract class MvvmActivity<T : ViewDataBinding, V : BaseViewModel<N>, N: BaseNavigator> : BaseActivity() {
+abstract class MvvmActivity<T : ViewDataBinding, V : BaseViewModel<N>, N : BaseNavigator> : BaseActivity() {
 
     private var mViewDataBinding: T? = null
-    private var mViewModel: V? = null
+    var mViewModel: V? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +25,10 @@ abstract class MvvmActivity<T : ViewDataBinding, V : BaseViewModel<N>, N: BaseNa
             setVariable(getBindingVariable(), mViewModel)
             executePendingBindings()
         }
+    }
+
+    fun onFragmentAttached() {
+
     }
 
     abstract fun getLayoutId(): Int

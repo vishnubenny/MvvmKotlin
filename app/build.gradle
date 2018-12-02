@@ -47,4 +47,6 @@ dependencies {
 
     //dataBinding library
 //    kapt "androidx.databinding:databinding-compiler:$rootProject.dataBindingVersion"
+
+    implementation 'com.jakewharton.timber:timber:4.7.1'
 }

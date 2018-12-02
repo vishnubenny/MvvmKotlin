@@ -15,4 +15,14 @@ class HomeActivity : MvvmActivity<ActivityHomeBinding, HomeActivityViewModel, Ho
     override fun getBindingVariable() = BR.viewModel
 
     override fun getNavigator() = this
+
+    override fun onResume() {
+        super.onResume()
+
+        mViewModel?.getTest()
+    }
+
+    override fun showLoader() {
+
+    }
 }
