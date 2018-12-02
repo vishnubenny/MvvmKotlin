@@ -1,5 +1,6 @@
 package com.vishnu.mvvmkot1.application
 
+import com.vishnu.mvvmkot1.ui.base.BaseApplication
 import com.vishnu.mvvmkot1.ui.util.DebugLogTree
 import timber.log.Timber
 

@@ -1,4 +1,4 @@
-package com.vishnu.mvvmkot1.application
+package com.vishnu.mvvmkot1.ui.base
 
 import android.annotation.SuppressLint
 import android.app.Application
