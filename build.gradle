@@ -31,5 +31,7 @@ task clean(type: Delete) {
 ext {
     // App dependencies
     lifecycle = '1.1.1'
-    dataBindingVersion = '3.4.0-alpha03'
+    data_binding_version = '3.4.0-alpha03'
+    timber_version = '4.7.1'
+    dagger_version = '2.15'
 }
